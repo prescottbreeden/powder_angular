@@ -1,0 +1,118 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+
+        //change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+
+    &:hover {
+        -webkit-transform: translateY(-3px);
+            -ms-transform: translateY(-3px);
+                transform: translateY(-3px);
+        -webkit-box-shadow: $default-box-shadow;
+                box-shadow: $default-box-shadow;
+
+        &::after {
+            -webkit-transform: scaleX(1.4) scaleY(1.6);
+                -ms-transform: scaleX(1.4) scaleY(1.6);
+                    transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        -webkit-transform: translateY(-1px);
+            -ms-transform: translateY(-1px);
+                transform: translateY(-1px);
+        -webkit-box-shadow: $default-box-shadow;
+                box-shadow: $default-box-shadow;
+        outline: none;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
+        transition: all .4s;
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+        
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--blue {
+        background-color: $color-primary;
+        color: $color-white;
+        
+        &::after {
+            background-color: $color-primary;
+        }
+    }
+
+    &--animated {
+        -webkit-animation: moveInButton .5s ease-out .75s;
+                animation: moveInButton .5s ease-out .75s;
+        -webkit-animation-fill-mode: backwards;
+                animation-fill-mode: backwards;
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: .1rem solid $color-primary;
+        padding: .3rem;
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        -webkit-box-shadow: $default-box-shadow;
+                box-shadow: $default-box-shadow;
+        -webkit-transform: translateY(-.2rem);
+            -ms-transform: translateY(-.2rem);
+                transform: translateY(-.2rem);
+    }
+
+    &:active {
+        -webkit-box-shadow: $default-box-shadow;
+                box-shadow: $default-box-shadow;
+        -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+                transform: translateY(0);
+    }
+}

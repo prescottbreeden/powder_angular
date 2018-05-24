@@ -1,0 +1,32 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absoluteCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+// MR. MEDIA QUERY MANAGER
+
+/*
+
+0-600px:    Phone
+600-900px:  Tablet Portrait
+900-1200px: Tablet Landscape
+[1200-1800] is where normal styles apply
+1800+:      Big Desktop
+
+*/
+
+@mixin respond-phone {
+    @media (max-width: 600px) { @content };
+}
