@@ -1,5 +1,4 @@
 /*
-
 0-600px:    Phone
 600-900px:  Tablet Portrait
 900-1200px: Tablet Landscape
@@ -20,7 +19,6 @@ $breakpoint argument choices:
         font-size: 56.25%; // 1 rem = 9px, 9/16 = 56.25%
     }
 
-    
     @include respond(tab-port) { // width < 900?
         font-size: 50%; // 1 rem = 8px, 8/16 = 50%
     }
@@ -30,7 +28,6 @@ $breakpoint argument choices:
     }
 
 ORDER: Base + typography > general layout + grid > page layout > components
-
 */
 @-webkit-keyframes moveInButton {
   0% {
