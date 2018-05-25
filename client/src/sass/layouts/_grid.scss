@@ -20,6 +20,12 @@
     [class^="col-"] {
         float: left;
 
+        // @include respond(tab-med) {
+        //     margin-left: 3.5rem;
+        //     margin-right: 0;
+        //     margin-bottom: $gutter-vertical-small;
+        // }
+
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
             
@@ -28,6 +34,10 @@
                 margin-bottom: $gutter-vertical-small;
             }
         }
+
+        // @include respond(tab-med) {
+        //     width: 40% !important;       
+        // }
 
         @include respond(tab-port) {
             width: 100% !important;
