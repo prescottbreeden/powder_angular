@@ -27,9 +27,17 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+    @include respond(tab-med) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+                clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+    }
+    @include respond(tab-port) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+                clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+    }
     @include respond(phone) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-                clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
+                clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
     }
 
     &__logo-box {

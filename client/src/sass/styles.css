@@ -447,6 +447,9 @@ body {
         text-align: center;
         font-size: 1.5rem;
         padding: 1rem; }
+        @media (max-width: 56.75em) {
+          .card__details ul li {
+            font-size: 2rem; } }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
   .card__cta {
@@ -517,6 +520,7 @@ body {
     outline-offset: 2rem; }
     @media (max-width: 56.75em) {
       .composition__photo {
+        outline-offset: orem;
         float: left;
         position: relative;
         width: 33.333333333333%;
@@ -552,10 +556,21 @@ body {
       -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       z-index: 20; }
+    @media (max-width: 56.75em) {
+      .composition__photo:hover {
+        outline: none;
+        -webkit-transform: scale(1.2) translateY(0);
+        -ms-transform: scale(1.2) translateY(0);
+        transform: scale(1.2) translateY(0); } }
   .composition:hover .composition__photo:not(:hover) {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     transform: scale(0.95); }
+  @media (max-width: 56.75em) {
+    .composition:hover .composition__photo:not(:hover) {
+      -webkit-transform: scale(1.2) !important;
+      -ms-transform: scale(1.2) !important;
+      transform: scale(1.2) !important; } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -1001,10 +1016,18 @@ body {
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
+  @media (max-width: 65.625em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+      clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh); } }
+  @media (max-width: 56.75em) {
+    .header {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+      clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh); } }
   @media (max-width: 37.5em) {
     .header {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%); } }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 88vh, 0 100%); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -1104,13 +1127,20 @@ body {
   width: 100%;
   list-style: none;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .navigation__list {
+      margin: 1rem; } }
 
 .navigation__item {
   margin: 1rem;
   position: relative;
   display: block; }
+  @media (max-width: 56.75em) {
+    .navigation__item {
+      margin-left: -1rem; } }
   @media (max-width: 37.5em) {
     .navigation__item {
+      margin: 1rem;
       width: 80%; } }
 
 .navigation__snowflake {

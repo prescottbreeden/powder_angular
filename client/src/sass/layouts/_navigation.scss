@@ -75,6 +75,10 @@
         width: 100%;
         list-style: none;
         text-align: center;
+
+        @include respond(phone) {
+            margin: 1rem;
+        }
     }
 
     &__item {
@@ -82,7 +86,11 @@
         position: relative;
         display: block;
 
+        @include respond(tab-port) {
+            margin-left: -1rem;
+        }
         @include respond(phone) {
+            margin: 1rem;
             width: 80%;
         }
     }
