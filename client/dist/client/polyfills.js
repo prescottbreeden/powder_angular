@@ -5473,7 +5473,11 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
+module.exports = __webpack_require__(/*! /Users/Goethe/Documents/code/udemy/css/powder_angular/client/src/polyfills.ts */"./src/polyfills.ts");
+=======
 module.exports = __webpack_require__(/*! /code/udemy/css/powder_angular/client/src/polyfills.ts */"./src/polyfills.ts");
+>>>>>>> ef0e99dd06b2852cab23ed567ae5cb3a8f79674d
 
 
 /***/ })
