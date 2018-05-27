@@ -3,14 +3,11 @@
 
     &__photo {
         width: 55%;
-        -webkit-box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
-                box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         border-radius: $default-border-radius;
         position: absolute;
         z-index: 10;
-        -webkit-transition: all .1s;
-             -o-transition: all .1s;
-                transition: all .1s;
+        transition: all .1s;
         outline-offset: 2rem;
 
         @include respond(tab-port) {
@@ -55,11 +52,8 @@
 
         &:hover {
             outline: 1.5rem solid $color-primary;
-            -webkit-transform: scale(1.05) translateY(-.5rem);
-                -ms-transform: scale(1.05) translateY(-.5rem);
-                    transform: scale(1.05) translateY(-.5rem);
-            -webkit-box-shadow: $default-box-shadow;
-                    box-shadow: $default-box-shadow;
+            transform: scale(1.05) translateY(-.5rem);
+            box-shadow: $default-box-shadow;
             z-index: 20;
         }
 
@@ -67,26 +61,20 @@
 
             &:hover {
                 outline: none;
-                -webkit-transform: scale(1.2) translateY(0);
-                    -ms-transform: scale(1.2) translateY(0);
-                        transform: scale(1.2) translateY(0);
+                transform: scale(1.2) translateY(0);
             }
         }
 
     }
 
     &:hover &__photo:not(:hover) {
-        -webkit-transform: scale(.95);
-            -ms-transform: scale(.95);
-                transform: scale(.95);
+        transform: scale(.95);
     }
 
     @include respond(tab-port) {
 
         &:hover &__photo:not(:hover) {
-            -webkit-transform: scale(1.2) !important;
-                -ms-transform: scale(1.2) !important;
-                    transform: scale(1.2) !important;
+            transform: scale(1.2) !important;
         }
     }
 
